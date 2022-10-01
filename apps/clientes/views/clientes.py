@@ -13,7 +13,7 @@ from django.urls import reverse_lazy
 class ClienteView(ListView):
     template_name = 'clientes/clientes.html'
     model = Cliente
-    queryset = Cliente.objects.all()
+    queryset = Cliente.objects.all().order_by('id')
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

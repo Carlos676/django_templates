@@ -41,7 +41,6 @@ DJANGO_APPS: Tuple[str, ...] = (
     'django.contrib.humanize',
     'django.contrib.admin',
     'django.contrib.admindocs',
-    
 )
 
 THIRD_PARTY_APPS: Tuple[str, ...] = (
@@ -69,10 +68,9 @@ LOCAL_APPS: Tuple[str, ...] = (
     'apps.contrib.app.ContribConfig',
     'apps.accounts.app.AccountsConfig',
     'apps.clientes.app.ClienteConfig',
-    
 )
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS 
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 
 MIDDLEWARE: Tuple[str, ...] = (

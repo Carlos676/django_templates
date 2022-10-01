@@ -25,7 +25,10 @@ urlpatterns = [
     path('', include('apps.clientes.urls', namespace='clientes')),
     
     #pagina de fromulario de clientes
-    path('form', include('apps.clientes.urls', namespace='formulario')),
+    #path('form', include('apps.clientes.urls', namespace='formulario')),
+     
+    #APIS direcciona 
+    path('api_cliente/', include('apps.clientes.api.urls', namespace='api-clientes')),
     
     
     # Accounts

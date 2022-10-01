@@ -66,7 +66,7 @@ CSRF_COOKIE_SECURE = True
 #
 #  STORAGE CONFIGURATION
 #
-INSTALLED_APPS += ('django_s3_storage', )  # noqa: F405
+INSTALLED_APPS += ('django_s3_storage', 'django_bootstrap5', )  # noqa: F405
 
 # Boto3 can use an IAM role if the application is running on AWS
 # https://boto3.amazonaws.com/v1/documentation/api/latest/guide/iam-example-policies.html
