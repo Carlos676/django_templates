@@ -17,7 +17,8 @@ class Ventas(models.Model):
     )
     
     
-    #Relacion de tablas cliente, producto
+    #Relacion de tablas cliente, producto,
+    
     
     cliente_fk = models.ForeignKey(Cliente, on_delete= models.SET_NULL, null = True)
     producto_fk = models.ForeignKey(Producto, on_delete= models.SET_NULL, null = True)
