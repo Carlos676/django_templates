@@ -38,6 +38,6 @@ class Cliente(models.Model):
     class Meta:
         app_label = 'clientes'
         db_table = 'cliente'
-        verbose_name = 'Clientes'
+        verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
         

@@ -6,10 +6,9 @@ from apps.clientes.models import Cliente
 from apps.clientes.views.formulario import ClienteForm
 
 
-
-
-
 from django.urls import reverse_lazy
+
+
 class ClienteView(ListView):
     template_name = 'clientes/clientes.html'
     model = Cliente
@@ -19,6 +18,10 @@ class ClienteView(ListView):
         context = super().get_context_data(**kwargs)
         context['listarcarlos'] = timezone.now()
         return context
+    
+    
+        
+    
     
 class CrearClienteViews(CreateView):
     model = Cliente

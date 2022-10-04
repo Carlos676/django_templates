@@ -7,5 +7,6 @@ class ClienteConfig(AppConfig):
     """creamos una app.py para que django sepa que estamos agregando el modelo cliente."""
 
     name = 'apps.clientes'
-    verbose_name = 'Clientes'
+    verbose_name = 'Cliente'
     verbose_name_plural = 'Clientes'
+
